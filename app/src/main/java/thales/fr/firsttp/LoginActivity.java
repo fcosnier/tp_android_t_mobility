@@ -1,5 +1,6 @@
 package thales.fr.firsttp;
 
+import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         mTextInputLayoutLogin = (TextInputLayout)
                 findViewById(R.id.activity_main_textinputlayout_login);
@@ -42,8 +43,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 login = mEditTextLogin.getText().toString();
-                Toast.makeText(LoginActivity.this, "Login: " + login, Toast.LENGTH_SHORT).show();
-                //startActivity(MainActivity);
+
+                if(login.compareTo("Android")!=0){
+                    Toast.makeText(LoginActivity.this, "Login n'est pas correct: - Login: "
+                            + login, Toast.LENGTH_SHORT).show();
+                } else {
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
