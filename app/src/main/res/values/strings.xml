@@ -1,9 +1,44 @@
 <resources>
-    <string name="app_name">firsttp</string>
     <string name="title_activity_main">MainActivity</string>
+    <!-- Default App -->
+    <string name="app_name">Coffee Break</string>
+    <string name="text_copyright">Copyright © InnovT XXXX</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="name">Name</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="auth">Authentification</string>
+    <string name="login">Utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="show_password">Afficher le mot de passe</string>
+    <string name="user_empty">Veuillez entrer votre identifiant</string>
+    <string name="user_not_valid">Veuillez entrer un identifiant valide</string>
+    <string name="error_password">Mauvais mot de passe</string>
+
+    <!-- Fragments -->
+    <string name="fragment_user_list">Liste des collaborateurs</string>
+    <string name="fragment_search">Rechercher un collaborateur</string>
+    <string name="fragment_setting">Paramètres</string>
+
+    <string name="lastname">Nom</string>
+    <string name="firstname">Prénom</string>
+    <string name="birthdate">Date de naissance</string>
+
+    <string name="lastname_colon">Nom:</string>
+    <string name="firstname_colon">Prénom:</string>
+    <string name="birthdate_colon">Date de naissance:</string>
+
+    <string name="alert_dialog_title">Déconnexion</string>
+    <string name="alert_dialog_logout">Etes-vous sûr de vouloir vous déconnecter ?</string>
+    <string name="drawer_item_users">Collaborateurs</string>
+    <string name="drawer_item_search">Rechercher</string>
+    <string name="drawer_item_settings">Paramètres</string>
+    <string name="drawer_item_sync">Transférer</string>
+    <string name="search">Recherche</string>
+    <string name="search_agent_description">Recherchez un collaborateur:</string>
+    <string name="fragment_profil">Profil</string>
+    <string name="criteria">Critères</string>
+
+    <string name="user_photo_ok">La photo a déjà été prise</string>
+
+
 </resources>

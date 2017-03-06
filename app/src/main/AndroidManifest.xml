@@ -3,12 +3,14 @@
     package="thales.fr.firsttp">
 
     <application
+        android:name=".application.CoreApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        android:theme="@style/CustomTheme"
+        android:windowSoftInputMode="stateHidden|adjustResize" >
+        <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,9 +18,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/actionbar_home_mainactivity"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

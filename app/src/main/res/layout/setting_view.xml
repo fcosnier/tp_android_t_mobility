@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/setting_view"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <!-- ************* -->
+            <!-- Photo quality -->
+            <!-- ************* -->
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:layout_marginStart="20dp"-->
+                        <!--android:text="Qualité de la photo"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:layout_marginStart="20dp"-->
+                        <!--android:text="Permet d'ajuster le ratio qualité/espace disque"/>-->
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginBottom="10dp">-->
+
+                    <!--<com.appyvet.rangebar.RangeBar-->
+                        <!--android:id="@+id/photo_size_rangebar"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="82dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginStart="10dp"-->
+                        <!--android:layout_marginEnd="30dp"-->
+                        <!--custom:rangeBar="false"-->
+                        <!--custom:tickEnd="2"-->
+                        <!--custom:pinRadius="20dp"-->
+                        <!--custom:selectorSize="9dp"-->
+                        <!--custom:temporaryPins="true"/>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="@string/settings_photo_quality_desc"-->
+                            <!--android:layout_marginStart="20dp"-->
+                            <!--android:layout_marginEnd="2dp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/photo_size_text"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="@string/settings_photo_quality_medium"/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+            <!--</FrameLayout>-->
+
+            <!--<View style="@style/Divider"/>-->
+
+            <!-- ************* -->
+            <!-- Photo crop -->
+            <!-- ************* -->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginStart="20dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="@string/settings_photo_crop_title"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginStart="20dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginBottom="10dp">-->
+
+                <!--<android.support.v7.widget.SwitchCompat-->
+                    <!--android:id="@+id/settings_photo_crop_switch"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_marginStart="5dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/settings_photo_crop_disabled"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/Divider"/>-->
+
+            <!-- ************ -->
+            <!-- Informations -->
+            <!-- ************ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp"
+                    android:text="Informations"/>
+
+               </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom thales copyright -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/setting_bottom_layout"
+        android:layout_gravity="end">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageViewCopyright"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:maxWidth="300dp"-->
+            <!--android:maxHeight="40dp"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:gravity="center"-->
+            <!--android:src="@drawable/thales_logo_tr"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textViewCopyright"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/text_copyright"-->
+            <!--android:textColor="@color/color_dark_blue"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="10sp"-->
+            <!--android:layout_marginBottom="10dp"/>-->
+
+    </LinearLayout>
+</LinearLayout>

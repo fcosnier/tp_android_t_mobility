@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profil_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/picture_bgm"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/grey300">
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:id="@+id/picture_icon"
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:elevation="10dp"
+                android:layout_gravity="center_horizontal"
+                app:iiv_color="@color/base30"
+                app:iiv_icon="gmd-account"/>
+
+            <!--<com.mikepenz.materialdrawer.view.BezelImageView-->
+                <!--android:id="@+id/imageViewProfil"-->
+                <!--android:layout_width="@dimen/profil_width"-->
+                <!--android:layout_height="@dimen/profil_width"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:elevation="2dp"-->
+                <!--android:visibility="gone"/>-->
+
+            <ImageView
+                android:id="@+id/imageViewProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/md_green_400">
+            <TextView
+                android:id="@+id/user_profil_photo_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_photo_ok"
+                android:textColor="@color/white"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="center"
+                android:visibility="gone"/>
+        </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/profil_form_use_photo_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Lastname -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="5dp">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:iiv_color="@color/base30"
+                        app:iiv_icon="gmd-account-circle"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/profil_form_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="16dp"
+                        app:theme="@style/MaterialLoginTheme.TextAppearanceForm">
+
+                        <EditText
+                            android:id="@+id/profil_text_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lastname"
+                            android:editable="false"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- Firstname -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:iiv_color="@color/base30"
+                        app:iiv_icon="gmd-account-circle"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/profil_form_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="16dp"
+                        app:theme="@style/MaterialLoginTheme.TextAppearanceForm">
+
+                        <EditText
+                            android:id="@+id/profil_text_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/firstname"
+                            android:editable="false"/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- Birthdate -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:iiv_color="@color/base30"
+                        app:iiv_icon="gmd-calendar"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/profil_form_birthdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="16dp"
+                        app:theme="@style/MaterialLoginTheme.TextAppearanceForm">
+
+                        <EditText
+                            android:id="@+id/profil_text_birthdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/birthdate"
+                            android:editable="false"/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/photo_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/floating_action_button"
+        android:clickable="true"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchor="@id/picture_icon"
+        app:elevation="12dp"
+        app:borderWidth="0dp"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
